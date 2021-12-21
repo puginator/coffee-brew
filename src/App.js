@@ -35,6 +35,7 @@ const Card = styled.div`
   height: 400px;
   border-radius: 5px;
   border: 3px solid #181818;
+  box-shadow: 0px 0px 15px 3px #b3b3b3;
   transition: transform 0.8s;
   transform-style: preserve-3d;
 
@@ -89,6 +90,8 @@ const BackCard = styled.div`
   height: 400px;
   border-radius: 5px;
   border: 3px solid #b3b3b3;
+  box-shadow: 0px 0px 15px 5px #181818;
+
   transition: transform 0.8s;
   transform-style: preserve-3d;
 `;
