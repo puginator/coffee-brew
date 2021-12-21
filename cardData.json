@@ -1,0 +1,9 @@
+[{
+        "name": "Chemex",
+        "image": "./assets/images/chemex.png"
+    },
+    {
+        "name": "Aeropress",
+        "image": "./assets/images/aeropress.png"
+    }
+]
