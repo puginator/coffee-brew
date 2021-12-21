@@ -30,7 +30,7 @@ const Card = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   width: 300px;
   height: 400px;
   border-radius: 5px;
@@ -38,13 +38,12 @@ const Card = styled.div`
   transition: transform 0.8s;
   transform-style: preserve-3d;
 
+
 `;
 const Subtitle = styled.h2`
   color: #ffffff;
   font-size: 2rem;
   text-align: center;
-  border-bottom: 3px solid #181818;
-  width: 100%;
 `;
 const Logo = styled.img`
   width: 100px;
@@ -62,7 +61,7 @@ const RecipeHeader = styled.h5`
 const Recipe = styled.p`
   color: #ffffff;
   font-size: 12px;
-  margin: 0;
+  margin: 0 0 75px;
   padding: 5px 0;
   text-align: center;
   background-color: #181818;
@@ -71,6 +70,7 @@ const Recipe = styled.p`
 
 const Button = styled.button`
   background-color:${({primary}) => primary ? "#181818" : "#b3b3b3"}; 
+  position: absolute;
   color: #ffffff;
   font-size: 15px;
   bottom: 10px;
@@ -99,6 +99,13 @@ const BrewStep = styled.li`
   color: #ffffff; 
   font-size: 10px;  
   `;
+const Quote = styled.p`
+  color: #ffffff;
+  text-align: center;
+  font-size: 10px;
+  padding: 10px 5px;
+  margin: 0;
+`;
 
 function App() {
 
@@ -120,7 +127,8 @@ function App() {
           <Button primary onClick={handleClick}>Brew</Button>
         </Card>
         : <BackCard>
-          <Subtitle>Brew Me</Subtitle>
+          <Subtitle>Chemex Recipe</Subtitle>
+          <Quote>"The Chemex is as aesthetically pleasing as it is able to make delicious, well-rounded coffee for you and your friend(s)." -Augie</Quote>
           <BrewInstructions>
             <BrewStep>Heat Water to 205 F</BrewStep>
             <BrewStep>Place filter in Chemex, and rinse with hot water</BrewStep>
