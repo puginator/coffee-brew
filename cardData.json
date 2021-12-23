@@ -1,6 +1,17 @@
 [{
         "name": "Chemex",
-        "image": "./assets/images/chemex.png"
+        "image": "./assets/images/chemex.png",
+        "recipe": "660g Water / 44g Coffee / Chemex / Chemex Filters / Gooseneck Kettle / Scale / Timer",
+        "brewing": {
+            "1": "Heat Water to 205°F",
+            "2": "Place filter in Chemex, and rinsse with hot water",
+            "3": "Course grind coffee and add to Chemex",
+            "4": "Add 75g of water and let bloom for 45 seconds.",
+            "5": "Continue adding water in heavy 75g pours until you reached your total water amount",
+            "6": "Total brew time should be between 3:30 - 4:30 minutes"
+        },
+        "quote": "The Chemex is as aesthetically pleasing as it is able to make delicious, well-rounded coffee for you and your friend(s), -Tim"
+
     },
     {
         "name": "Aeropress",

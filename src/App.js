@@ -4,6 +4,7 @@ import { createGlobalStyle } from 'styled-components';
 import styled from 'styled-components';
 // import {data} from './cardData.json';
 import LogoSrc from './assets/images/Chemex.png';
+import Timer from './components/Timer';
 
 
 
@@ -100,11 +101,13 @@ const BrewInstructions = styled.ol`
 `;
 const BrewStep = styled.li`
   color: #ffffff; 
-  font-size: 10px;  
+  font-size: 11px;
+  line-height: 1.5;
   `;
 const Quote = styled.p`
-  color: #ffffff;
+  color: #181818;
   text-align: center;
+  background-color: #b3b3b3;
   font-size: 10px;
   padding: 10px 5px;
   margin: 0;
@@ -141,7 +144,11 @@ function App() {
             <BrewStep>Total brew time should be 3:30-4:30</BrewStep>
             <BrewStep>Wait for 30 seconds</BrewStep>
           </BrewInstructions>
-          <Button onClick={handleClick}>Back</Button>
+          <Container>
+            <Timer />
+            <Button onClick={handleClick}>Back</Button>
+          </Container>
+          
         </BackCard> }
       </Container>
 
