@@ -66,7 +66,7 @@ const StyledButton = styled.button`
 
 
 const NewCard = ( { recipe, handleClick } ) => {
-
+    
     return (
         <Container>
             <StyledCard>
