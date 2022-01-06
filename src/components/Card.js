@@ -44,6 +44,8 @@ const StyledRecipeHeader = styled.h5`
 
 const StyledRecipe = styled.p`
   color: #ffffff;
+  border: 3px solid #b3b3b3;
+  border-radius: 5px;
   font-size: 12px;
   margin: 0 0 75px;
   padding: 5px;

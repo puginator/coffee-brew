@@ -25,7 +25,6 @@ const Clock = styled.div`
 `;
 
 const Button = styled.button`
-  /* background-color:${({primary}) => primary ? "#181818" : "#b3b3b3"};  */
   background-color: transparent;
   color: ${({stop}) => stop ? "tomato" : "forestgreen"};
   font-size: 12px;
