@@ -27,6 +27,9 @@ const Container = styled.div`
   gap: 20px;
   justify-content: center;
   align-items: center;
+  @media (max-width: 768px) {
+    grid: 1fr  / 1fr;
+  }
 `;
 
 
