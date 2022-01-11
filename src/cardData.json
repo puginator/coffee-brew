@@ -12,6 +12,20 @@
         },
         "quote": "The Chemex is as aesthetically pleasing as it is able to make delicious, well-rounded coffee for you and your friend(s), -Tim"
 
+    }, {
+        "name": "Clever Dripper",
+        "image": "./assets/images/Chemex.png",
+        "recipe": "425g Water / 28g Coffee / Clever /  Filters / Decanter / Scale / Timer",
+        "instructions": {
+            "1": "Heat Water to 205°F",
+            "2": "Place filter in Clever, and rinse with hot water",
+            "3": "Medium grind coffee and add to Clever",
+            "4": "Add 60g of water and let bloom for 30 seconds.",
+            "5": "Continue adding water until you reached your total of 425g and cover Clever with lid",
+            "6": "Place Clever on top of a decanter or large mug at 3:00 minutes to drain"
+        },
+        "quote": "If you want to brew smart instead of hard, it would be wise of you to brew with the Clever. -Tim"
+
     },
     {
         "name": "Aeropress",
