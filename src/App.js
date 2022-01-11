@@ -23,7 +23,7 @@ const Title = styled.h1`
 `;
 const Container = styled.div`
   display: grid;
-  grid: 1fr 1fr / 1fr 1fr 1fr;
+  grid: 1fr 1fr / 1fr 1fr ;
   gap: 20px;
   justify-content: center;
   align-items: center;
