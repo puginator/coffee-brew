@@ -14,7 +14,7 @@
 
     }, {
         "name": "Clever Dripper",
-        "image": "./assets/images/Chemex.png",
+        "image": "./assets/images/MrCoffee.png",
         "recipe": "425g Water / 28g Coffee / Clever /  Filters / Decanter / Scale / Timer",
         "instructions": {
             "1": "Heat Water to 205°F",
