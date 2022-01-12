@@ -1,3 +1,11 @@
+# Coffee Brew Cards
+I love brewing coffee every morning, but I hate having to find a solid recipe for each brew method online. At my old business we had come up with baseball feeling coffee brew cards, sadly i have lost all of them but still had the files for the cards. This lead me to build this app, a simple brew recipe site where I can easily pick my brew method and follow along with a built in timer feature. I am currently porting this over to a React Native app because whats better than having a dedicated iOS app for brew recipes.
+
+I have a few features I am hoping to add in the future. I would like the ability to log in and have saved favotires. As well as the ability to build your own recipe on a similar card layout utilizing the images from this project. I am hoping this will eventually be built to something where you can send your cards of custom recipes to friends and family to help everyone brew a better cup of coffee.
+
+Follow along as I build out a better app for brewing great coffee
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
