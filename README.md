@@ -1,6 +1,6 @@
 # Coffee Brew Cards
 
-This app can be viewed at coffeebrewcards.com for a working version.
+This app can be viewed at www.coffeebrewcards.com for a working version.
 
 I love brewing coffee every morning, but I hate having to find a solid recipe for each brew method online. At my old business we had come up with baseball feeling coffee brew cards, sadly i have lost all of them but still had the files for the cards. This lead me to build this app, a simple brew recipe site where I can easily pick my brew method and follow along with a built in timer feature. I am currently porting this over to a React Native app because whats better than having a dedicated iOS app for brew recipes.
 
