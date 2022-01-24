@@ -4,14 +4,14 @@ import { createGlobalStyle } from 'styled-components';
 import styled from 'styled-components';
 import NewCard from './components/Card';
 import BackCardComponent from './components/BackCard';
-
+import { nanoid } from 'nanoid';
 
 const data = require('./cardData.json');
 
-console.log( typeof data);
 const GlobalStyle = createGlobalStyle`
   body {
-    margin: 0;  
+    margin: 0;
+    padding: 20px;  
     font-family: monospace, sans-serif;
     background-color: #404040;
   }
@@ -27,25 +27,68 @@ const Container = styled.div`
   gap: 20px;
   justify-content: center;
   align-items: center;
+  @media (max-width: 1200px) {
+    grid: 1fr 1fr / 1fr 1fr;
+  }
+  @media (max-width: 768px) {
+    grid: 1fr  / 1fr;
+  }
 `;
 
 
 function App() {
 
-  const [flip,setFlip] = useState(true);
-  function handleClick() {
-    setFlip(!flip);
+  const [card,setCard] = useState(allNewCard());
+
+  function allNewCard() {
+    const newCard = data.map(card => {
+      return {
+        ...card,
+        id: nanoid(),
+        isFlipped: false
+      }
+    })
+    return newCard;
   }
+
+  function handleClick(id) {
+    setCard(card.map(card => {
+      if (card.id === id) {
+        return {
+          ...card,
+          isFlipped: !card.isFlipped
+        }
+      }
+      return card;
+    }))
+  }
+
+  const cardElement = card.map(card => {
+    return (
+      !card.isFlipped ?     
+        <NewCard
+          key={card.id}
+          recipe={card}
+          handleClick={() => handleClick(card.id)}
+          isFlipped={card.isFlipped}
+        />
+      :
+        <BackCardComponent
+          key={card.id}
+          recipe={card}
+          handleClick={() => handleClick(card.id)}
+          isFlipped={card.isFlipped}
+        />
+    )
+
+  })
+
   return (
     <>
       <GlobalStyle />
       <Title>Coffee Brew Cards</Title>
       <Container>
-        {data && data.map((recipe, index) => {
-          return (
-            flip ? <NewCard key={index} recipe={recipe} handleClick={handleClick} /> : <BackCardComponent key={index} recipe={recipe} handleClick={handleClick} />
-          )
-        })}
+        {cardElement}
       </Container>
     </>
     

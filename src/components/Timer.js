@@ -25,9 +25,8 @@ const Clock = styled.div`
 `;
 
 const Button = styled.button`
-  /* background-color:${({primary}) => primary ? "#181818" : "#b3b3b3"};  */
   background-color: transparent;
-  color: #b3b3b3;
+  color: ${({stop}) => stop ? "tomato" : "forestgreen"};
   font-size: 12px;
   border: none;
   padding: 5px 5px;
@@ -74,7 +73,7 @@ const Timer = () => {
             <Button onClick={toggle}>
                 {isActive ? 'Pause' : 'Start'}
             </Button>
-            <Button onClick={reset}>
+            <Button stop onClick={reset}>
                 Reset
             </Button>
         </Container>

@@ -30,6 +30,8 @@ const StyledQuote = styled.p`
   color: #181818;
   text-align: center;
   background-color: #b3b3b3;
+  border: 3px solid #181818;
+  border-radius: 5px;
   font-size: 10px;
   padding: 10px 5px;
   margin: 0;
