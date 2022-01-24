@@ -33,6 +33,7 @@ const StyledLogo = styled.img`
   src: url(${({src}) => src});
   width: 100px;
   min-height: 150px;
+  object-fit: contain;
 `;
 
 const StyledRecipeHeader = styled.h5`
