@@ -1,0 +1,348 @@
+.brewLayout {
+  display: grid;
+  grid-template-columns: minmax(260px, 350px) 1fr;
+  gap: 1rem;
+}
+
+.sidebar,
+.player {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  box-shadow: var(--shadow);
+  padding: 1rem;
+}
+
+.sidebar h2,
+.player h2 {
+  margin-top: 0;
+}
+
+.sidebarHeading {
+  margin: 1rem 0 0.5rem;
+  font-size: 1rem;
+}
+
+.prepPanel {
+  margin-bottom: 0.85rem;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: #fff8ed;
+  padding: 0.75rem;
+}
+
+.prepPanel h3 {
+  margin: 0;
+}
+
+.prepPanel p {
+  margin: 0.35rem 0 0;
+  color: var(--ink-soft);
+  font-size: 0.85rem;
+}
+
+.prepList {
+  margin: 0.55rem 0 0;
+  padding-left: 0;
+  list-style: none;
+  display: grid;
+  gap: 0.45rem;
+}
+
+.prepList li {
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: #fff;
+  padding: 0.4rem 0.45rem;
+}
+
+.prepList li label {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+
+.prepList li input {
+  margin-top: 0.1rem;
+}
+
+.prepDone {
+  opacity: 0.75;
+}
+
+.prepDone span {
+  text-decoration: line-through;
+}
+
+.prepReady {
+  margin-top: 0.6rem;
+  border: 1px solid #99c4b9;
+  border-radius: 10px;
+  background: #e6f4ef;
+  padding: 0.45rem 0.55rem;
+  color: #08463b;
+  font-weight: 700;
+}
+
+.prepStart {
+  margin-top: 0.65rem;
+}
+
+.tweakGrid {
+  display: grid;
+  gap: 0.65rem;
+}
+
+.tweakGrid label {
+  display: grid;
+  gap: 0.3rem;
+  font-size: 0.86rem;
+  color: var(--ink-soft);
+}
+
+.toggleGroup {
+  margin-top: 0.8rem;
+  display: grid;
+  gap: 0.35rem;
+}
+
+.toggleItem {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  font-size: 0.84rem;
+  color: var(--ink-soft);
+}
+
+.toggleItem input {
+  width: 16px;
+  height: 16px;
+  margin: 0;
+}
+
+.progressTrack {
+  height: 10px;
+  width: 100%;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: #efe3d5;
+  overflow: hidden;
+  margin-top: 0.85rem;
+}
+
+.progressTrack span {
+  display: block;
+  height: 100%;
+  background: linear-gradient(90deg, var(--accent), var(--accent-2));
+  transition: width 180ms ease;
+}
+
+.progressText {
+  margin: 0.4rem 0 0;
+  color: var(--ink-soft);
+  font-size: 0.84rem;
+  font-weight: 700;
+}
+
+.upcomingList {
+  margin: 0;
+  padding-left: 1rem;
+  display: grid;
+  gap: 0.5rem;
+}
+
+.upcomingList li {
+  display: grid;
+  gap: 0.15rem;
+}
+
+.upcomingList li strong {
+  font-size: 0.78rem;
+  color: var(--ink);
+}
+
+.upcomingList li span {
+  color: var(--ink-soft);
+  font-size: 0.82rem;
+  line-height: 1.35;
+}
+
+.playerTop {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.7rem;
+  align-items: center;
+}
+
+.sessionMeta {
+  margin: 0;
+  color: var(--ink-soft);
+  font-weight: 700;
+}
+
+.progressRing {
+  width: 124px;
+  aspect-ratio: 1;
+  border-radius: 999px;
+  border: 10px solid var(--line);
+  display: grid;
+  place-items: center;
+  font-weight: 700;
+  font-size: 1.1rem;
+  background: conic-gradient(var(--accent) var(--progress), #efe3d5 0);
+}
+
+.stepCard {
+  margin-top: 0.8rem;
+  background: var(--surface-2);
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: 0.85rem;
+}
+
+.nowHeader {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.6rem;
+  align-items: center;
+}
+
+.nowHeader h3 {
+  margin: 0;
+  font-size: 1.03rem;
+}
+
+.statusPending,
+.statusDone {
+  border-radius: 999px;
+  padding: 0.2rem 0.55rem;
+  font-size: 0.72rem;
+  font-weight: 700;
+}
+
+.statusPending {
+  border: 1px solid var(--line);
+  background: #fff;
+}
+
+.statusDone {
+  border: 1px solid #0f7e6a;
+  background: #d5f2ec;
+  color: #08463b;
+}
+
+.directive {
+  margin: 0.45rem 0 0;
+  color: var(--accent);
+  font-size: 0.95rem;
+  font-weight: 700;
+}
+
+.stepCard p {
+  margin: 0.35rem 0 0;
+  color: var(--ink-soft);
+  line-height: 1.45;
+}
+
+.nextStepPanel {
+  margin-top: 0.8rem;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: #fff8ed;
+  padding: 0.75rem;
+}
+
+.nextStepPanel h3 {
+  margin: 0;
+}
+
+.nextStepPanel p {
+  margin: 0.35rem 0 0;
+  color: var(--ink-soft);
+}
+
+.metaRow {
+  margin-top: 0.65rem;
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.metaItem,
+.metaItemDone {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 0.25rem 0.55rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+.metaItemDone {
+  border-color: #0f7e6a;
+  background: #d5f2ec;
+  color: #08463b;
+}
+
+.waterRow {
+  margin-top: 0.8rem;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  flex-wrap: wrap;
+}
+
+.waterRow input {
+  width: 120px;
+}
+
+.controlRow {
+  margin-top: 0.9rem;
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.controlRow button {
+  min-height: 36px;
+}
+
+.secondary {
+  background: transparent;
+  border: 1px solid var(--line);
+  color: var(--ink);
+  box-shadow: none;
+}
+
+.sessionNotice {
+  margin: 0.65rem 0 0;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: #f9f1e7;
+  color: var(--ink-soft);
+  padding: 0.5rem 0.65rem;
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+.completeBanner {
+  background: linear-gradient(120deg, rgba(18, 126, 106, 0.2), rgba(179, 67, 32, 0.15));
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: 0.8rem;
+}
+
+@media (max-width: 980px) {
+  .brewLayout {
+    grid-template-columns: 1fr;
+  }
+
+  .progressRing {
+    width: 108px;
+    font-size: 1rem;
+  }
+
+  .nextStepPanel {
+    display: none;
+  }
+}

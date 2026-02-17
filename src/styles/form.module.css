@@ -1,0 +1,85 @@
+.formStack {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.formGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 0.7rem;
+}
+
+.formSection {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  padding: 0.9rem;
+  box-shadow: var(--shadow);
+}
+
+.formSection h2,
+.formSection h3 {
+  margin-top: 0;
+}
+
+.formSection label,
+.authCard label {
+  display: grid;
+  gap: 0.28rem;
+  font-size: 0.84rem;
+  color: var(--ink-soft);
+  font-weight: 700;
+}
+
+.formSection input,
+.formSection textarea,
+.formSection select,
+.authCard input {
+  width: 100%;
+}
+
+.row {
+  display: flex;
+  gap: 0.45rem;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.message {
+  color: var(--ink-soft);
+}
+
+.authCard {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: 1rem;
+  max-width: 540px;
+}
+
+.stepList {
+  display: grid;
+  gap: 0.6rem;
+}
+
+.stepItem {
+  background: var(--surface-2);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 0.7rem;
+  display: grid;
+  gap: 0.5rem;
+}
+
+.stepItem h4 {
+  margin: 0;
+}
+
+.inlineInput {
+  max-width: 120px;
+}
+
+.warning {
+  color: #8b2f18;
+  font-weight: 700;
+}

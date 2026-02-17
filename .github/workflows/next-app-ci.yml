@@ -1,0 +1,67 @@
+name: Next App CI
+
+on:
+  pull_request:
+    paths:
+      - "src/**"
+      - "public/**"
+      - "scripts/**"
+      - "supabase/**"
+      - "tests/**"
+      - "package.json"
+      - "package-lock.json"
+      - "next.config.ts"
+      - "tsconfig.json"
+      - "eslint.config.mjs"
+      - "postcss.config.mjs"
+      - "vitest.config.ts"
+      - "playwright.config.ts"
+      - ".github/workflows/next-app-ci.yml"
+  push:
+    branches:
+      - main
+    paths:
+      - "src/**"
+      - "public/**"
+      - "scripts/**"
+      - "supabase/**"
+      - "tests/**"
+      - "package.json"
+      - "package-lock.json"
+      - "next.config.ts"
+      - "tsconfig.json"
+      - "eslint.config.mjs"
+      - "postcss.config.mjs"
+      - "vitest.config.ts"
+      - "playwright.config.ts"
+      - ".github/workflows/next-app-ci.yml"
+
+jobs:
+  quality:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+          cache-dependency-path: package-lock.json
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Verify generated seed SQL
+        run: npm run seed:check
+
+      - name: Lint
+        run: npm run lint
+
+      - name: Unit tests
+        run: npm run test
+
+      - name: Build
+        run: npm run build

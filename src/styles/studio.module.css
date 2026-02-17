@@ -1,0 +1,112 @@
+.layout {
+  display: grid;
+  grid-template-columns: 1.25fr 0.95fr;
+  gap: 1rem;
+}
+
+.previewCard {
+  position: sticky;
+  top: 84px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  box-shadow: var(--shadow);
+  overflow: hidden;
+}
+
+.previewImage {
+  position: relative;
+  min-height: 220px;
+  background: linear-gradient(140deg, #f3cea7, #ccaf88);
+}
+
+.previewImage img {
+  object-fit: contain;
+  padding: 0.6rem;
+}
+
+.previewBody {
+  padding: 0.8rem;
+}
+
+.previewBody h3 {
+  margin: 0;
+}
+
+.previewBody p {
+  color: var(--ink-soft);
+}
+
+.toolbar {
+  display: flex;
+  gap: 0.45rem;
+  flex-wrap: wrap;
+  margin-bottom: 0.75rem;
+}
+
+.toolbar button,
+.toolbar a {
+  padding: 0.5rem 0.85rem;
+  border-radius: 999px;
+  font-size: 0.82rem;
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 34px;
+}
+
+.toolbarPrimary {
+  background: var(--accent);
+  color: #fff;
+  border: 0;
+}
+
+.toolbarGhost,
+.secondary {
+  background: transparent;
+  color: var(--ink);
+  border: 1px solid var(--line);
+}
+
+.statusMessage {
+  margin: 0 0 0.75rem;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 0.6rem 0.75rem;
+  background: #f9f1e7;
+  color: var(--ink-soft);
+}
+
+.dashGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 0.9rem;
+}
+
+.dashCard {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: 0.75rem;
+  box-shadow: var(--shadow);
+}
+
+.dashCard h3 {
+  margin: 0;
+}
+
+.dashCard p {
+  margin: 0.35rem 0;
+  color: var(--ink-soft);
+}
+
+@media (max-width: 980px) {
+  .layout {
+    grid-template-columns: 1fr;
+  }
+
+  .previewCard {
+    position: static;
+  }
+}
